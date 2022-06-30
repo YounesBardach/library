@@ -102,8 +102,6 @@ body {
 
 .container {
   min-height: inherit;
-  display: grid;
-  grid-template-rows: 1fr 3fr;
   background-image: url(../img/pexels-pixabay-159711.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -112,14 +110,13 @@ body {
 
 .adder {
   display: grid;
+  grid-template-rows: 300px;
   justify-items: center;
-  padding: 1rem;
-  padding-block-end: 0.5rem;
+  align-items: center;
 }
 
 .form {
   display: grid;
-  align-items: center;
   justify-items: center;
   gap: 1rem;
   padding: 1rem;
@@ -132,7 +129,6 @@ body {
 .grid-checkbox {
   grid-template-columns: auto auto;
   display: grid;
-  align-items: center;
   gap: 0.5rem;
 }
 
@@ -143,10 +139,10 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-  padding: 1rem;
-  padding-block-start: 0.5rem;
+  grid-template-columns: repeat(auto-fit, 40ch);
   gap: 1rem;
+  justify-content: center;
+  padding-block-end: 1rem;
 }
 
 .card {
@@ -159,6 +155,8 @@ body {
   border-radius: 5px;
   border-block-start: 5px solid lightskyblue;
   border-block-end: 5px solid lightskyblue;
+  text-align: center;
+  word-break: break-word;
 }
 
 .bold-text {
@@ -172,6 +170,14 @@ body {
   border-radius: 5px;
 }
 
+.hidden-alert {
+  display: none;
+}
+
 /* Attributions:
 
-- Photo by Pixabay: Books in Black Wooden Book Shelf, https://www.pexels.com/photo/books-in-black-wooden-book-shelf-159711/ */
+- Photo by Pixabay: Books in Black Wooden Book Shelf, https://www.pexels.com/photo/books-in-black-wooden-book-shelf-159711/
+- Favicon from https://favicon.io/
+- SVG icons from https://materialdesignicons.com/
+
+*/
