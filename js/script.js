@@ -1,15 +1,28 @@
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-}
+// function Book(title, author, pages, read) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
+// }
 
-Book.prototype.readChange = function () {
-  this.read = !this.read;
-};
+// Book.prototype.readChange = function () {
+//   this.read = !this.read;
+// };
+
+class Book {
+
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+
+  readChange () {this.read = !this.read}
+
+}
 
 const addButton = document.querySelector(".form>.blue-button");
 const cards = document.querySelector(".cards");
